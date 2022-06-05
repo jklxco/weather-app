@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Current Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>WEATHER APP</header>
-    <form id="location-form">
-        <input type="text" id="location" required>
-        <button type="submit" id="btn-location" for="location">Submit!</button>
-    </form>
+    
+    <section id="main-content">
+        <header>Weather Forecast</header>
+        <div class="value" id="div-location">Enter A Location Below</div>
+        <div id="weather-details">
+            <div class="detail">
+                <div class="title">Temperature</div>
+                <div class="value" id="div-temp">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Feels Like</div>
+                <div class="value" id="div-feels-like">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Min Temp</div>
+                <div class="value" id="div-min-temp">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Max Temp</div>
+                <div class="value" id="div-max-temp">TBD</div>
+            </div>
+        </div>
+        <form id="location-form">
+            <input type="text" id="location" placeholder="Enter A Location" required>
+            <button type="submit" id="btn-location" for="location">Submit!</button>
+        </form>
+        
+    </section>
+    <a id="open-weather">Powered By OpenWeather API</a>
+
+    
     <script src="scripts.js" type="module" defer></script>
 </body>
 </html>
